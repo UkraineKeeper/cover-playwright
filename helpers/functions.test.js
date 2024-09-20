@@ -13,15 +13,8 @@ async function screenFullPage(page, testName) {
 
     const screenshotPath = path.join(__dirname, 'screenshots', screenshotName);
 
-    // Переконуємося, що директрія існує
-    if (!fs.existsSync(path.dirname(screenshotPath))) {
-        fs.mkdirSync(path.dirname(screenshotPath), { recursive: true });
-    }
 
-    // Зробити скріншот з повною сторінкою
     await page.screenshot({ path: screenshotPath, fullPage: true });
-
-    console.log(`Screenshot saved as ${screenshotName}`);
 }
 
 module.exports = { screenFullPage };
