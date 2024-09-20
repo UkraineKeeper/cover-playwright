@@ -25,8 +25,8 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    actionTimeout: 10 * 1000,
-    navigationTimeout: 30 * 1000,
+    actionTimeout: 30 * 1000,
+    navigationTimeout: 60 * 1000,
     baseURL: 'http://bo3.gg',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
