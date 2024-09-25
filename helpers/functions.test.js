@@ -1,3 +1,5 @@
+import { footerElements, menuPages } from "../page-objects/skeleton";
+
 const fs = require('fs');
 const path = require('path');
 
@@ -18,3 +20,9 @@ async function screenFullPage(page, testName) {
 }
 
 module.exports = { screenFullPage };
+
+async function checkWebPageSkeleton(page) {
+    await expect(page.locator(menuPages.menuHeader)).toBeVisible();
+    await expect(page.locator(footerElements.footerMenu)).toBeVisible();
+    await expect(page.locator('text=component.')).toHaveCount(0);
+}

@@ -185,3 +185,16 @@ export async function moveToCrosshairs(page) {
   expect(currentUrl).toContain('/crosshair/generator');
 }
 
+export async function moveToFirstLiveMatch() {
+    // cy.wait(1000);
+    // cy.get('body').then(($body) => {
+    //   if ($body.find(allMatchesContent.liveMatchesClickableArea).first().length === 0) {
+    //     cy.log('There are no live matches at the moment');
+    //     cy.get(menuPages.headerLogoBo3).click();
+    //     cy.get(footerElements.helpUkraine).click();
+    //     cy.wrap(null).then(() => { throw new Error('Тест зупинено, оскільки немає живих матчів'); });
+    //   } else {
+    //     cy.get(allMatchesContent.liveMatchesClickableArea).first().click();
+    //   }
+    // });
+}
