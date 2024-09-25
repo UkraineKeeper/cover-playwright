@@ -93,6 +93,7 @@ export const menuPages = {
     searchInput: 'div.c-global-search-field__input',
     searchFirstSelection: 'a.router-link-active.router-link-exact-active.c-dropdown__item.focus',
     menuHeader: 'div.o-wrapper > .c-main-menu',
+    wholeHeader: 'header.c-main-header',
 }
 
 export const loginModal = {

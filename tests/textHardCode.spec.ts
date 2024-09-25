@@ -1,11 +1,11 @@
 import {test, expect} from "@playwright/test";
-import { screenFullPage, checkWebPageSkeleton } from "../helpers/functions.test";
+import { screenFullPage, checkWebPageSkeleton, checkMobilePageSkeleton } from "../helpers/functions.test";
 import { csMenuTextEn, vlrMenuTextEn, dotaMenuTextEn,  footerTextEn } from "../helpers/textFunctions.test";
 import { firstEntryWebElements, footerElements, menuPages } from "../page-objects/skeleton";
 
 test.afterEach(async ({page}) => {
-    await checkWebPageSkeleton(page)
     await screenFullPage(page, test.info().title);
+    await checkMobilePageSkeleton(page);
 })
 
 export async function clickModals(page) {
