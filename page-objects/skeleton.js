@@ -44,6 +44,7 @@ export const sidebarPickemWidget = {
 export const footerElements = {
     premiumSubscriptionElement: 'a[href*="/premium"]',
     helpUkraine: 'a[href*="/wiki/help-ukraine"]',
+    footerMenu: 'div.c-main-footer__top > .menus-list',
 }
 
 export const firstEntryWebElements = {
@@ -91,6 +92,8 @@ export const menuPages = {
     searchButton: ".c-global-main-header-search-toggle > button",
     searchInput: 'div.c-global-search-field__input',
     searchFirstSelection: 'a.router-link-active.router-link-exact-active.c-dropdown__item.focus',
+    menuHeader: 'div.o-wrapper > .c-main-menu',
+    wholeHeader: 'header.c-main-header',
 }
 
 export const loginModal = {

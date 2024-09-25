@@ -1,7 +1,18 @@
+import { footerElements, menuPages } from "../page-objects/skeleton";
+import { expect } from "@playwright/test";
+
+export async function checkWebPageSkeleton(page) {
+    await expect(page.locator(menuPages.wholeHeader)).toBeVisible();
+    // await expect(page.locator(menuPages.menuHeader)).toBeVisible(); // only for web
+    await expect(page.locator(footerElements.footerMenu)).toBeVisible();
+    await expect(page.locator('text=component.')).toHaveCount(0);
+    // await expect(page.locator('text=components.')).toHaveCount(0);
+}
+
 const fs = require('fs');
 const path = require('path');
 
-async function screenFullPage(page, testName) {
+export async function screenFullPage(page, testName) {
     const url = page.url();
     console.log('Current URL:', url);
     console.log('Test Name:', testName);
@@ -17,4 +28,4 @@ async function screenFullPage(page, testName) {
     await page.screenshot({ path: screenshotPath, fullPage: true });
 }
 
-module.exports = { screenFullPage };
+// module.exports = { screenFullPage };
