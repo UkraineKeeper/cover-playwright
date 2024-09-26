@@ -1,12 +1,15 @@
-import { footerElements, menuPages } from "../page-objects/skeleton";
+import { footerElements, menuPages, firstEntryWebElements } from "../page-objects/skeleton";
 import { expect } from "@playwright/test";
 
 export async function checkWebPageSkeleton(page) {
-    await expect(page.locator(menuPages.wholeHeader)).toBeVisible();
+    await expect(page.locator(menuPages.wholeHeader)).toBeVisible({ timeout: 30000 });
     // await expect(page.locator(menuPages.menuHeader)).toBeVisible(); // only for web
     await expect(page.locator(footerElements.footerMenu)).toBeVisible();
+    // await expect(page.locator(firstEntryWebElements.switchLanguageModal)).toBeVisible({ timeout: 30000 });
+    await page.locator(firstEntryWebElements.selectFirstLangInModal).click({ timeout: 30000 });
+    await expect(page.locator(firstEntryWebElements.selectFirstLangInModal)).toHaveCount(0);
     await expect(page.locator('text=component.')).toHaveCount(0);
-    // await expect(page.locator('text=components.')).toHaveCount(0);
+    await expect(page.locator('text=components.')).toHaveCount(0);
 }
 
 const fs = require('fs');
@@ -23,8 +26,6 @@ export async function screenFullPage(page, testName) {
     const screenshotName = `${formattedTestName}--${timestamp}--${formattedUrl}.png`;
 
     const screenshotPath = path.join(__dirname, 'screenshots', screenshotName);
-
-
     await page.screenshot({ path: screenshotPath, fullPage: true });
 }
 

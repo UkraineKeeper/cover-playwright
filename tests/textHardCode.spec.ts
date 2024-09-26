@@ -4,8 +4,8 @@ import { csMenuTextEn, vlrMenuTextEn, dotaMenuTextEn,  footerTextEn } from "../h
 import { firstEntryWebElements, footerElements, menuPages } from "../page-objects/skeleton";
 
 test.afterEach(async ({page}) => {
-    await screenFullPage(page, test.info().title);
     await checkWebPageSkeleton(page);
+    await screenFullPage(page, test.info().title);
 })
 
 export async function clickModals(page) {
@@ -16,17 +16,17 @@ export async function clickModals(page) {
 test.describe('Check texts for CS Pages', () => {
 
     test('HardCode-tCSi-01 CS Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/passion-ua-vs-ww-25-09-2024');
+        await page.goto('/es/matches/favbet-vs-drillas-26-09-2024');
         await clickModals(page);
     });
 
     test('HardCode-tCSi-02 CS Live Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/sinners-vs-cybershoke-25-09-2024');
+        await page.goto('/es/matches/partizan-esport-vs-genone-26-09-2024');
         await clickModals(page);
     });
 
     test('HardCode-tCSi-03 CS Upcoming Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/m80-cs-go-vs-revenge-nation-26-09-2024');
+        await page.goto('/es/matches/m80-cs-go-vs-take-flyte-29-09-2024');
         await clickModals(page);
     });
 
@@ -231,12 +231,12 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tDOTAi-01 Dota Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/dota2/matches/team-essence-vs-plsreporttimber-25-09-2024');
+        await page.goto('/es/dota2/matches/l1ga-team-vs-night-pulse-26-09-2024');
         await clickModals(page);
     });
 
     test('HardCode-tDOTAi-02 Dota Live Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/dota2/matches/dms-vs-night-pulse-25-09-2024');
+        await page.goto('/es/dota2/matches/hydra-vs-five-beavers-26-09-2024');
         await clickModals(page);
     });
 
@@ -275,8 +275,8 @@ test.describe('Check texts for CS Pages', () => {
         await clickModals(page);
     });
 
-    test.skip('HardCode-tLOLi-01 LoL Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/lol/matches/bk-rog-esports-lol-vs-team-go-21-09-2024');
+    test('HardCode-tLOLi-01 LoL Live Match First', async ({ page }) => { // <--- Always Changed
+        await page.goto('/es/lol/gam-esports-vs-fukuoka-softbank-hawks-gaming-26-09-2024');
         await clickModals(page);
     });
 
@@ -321,7 +321,7 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tCSc-02 CS Tournament Stages', async ({ page }) => {
-        await page.goto('/es/tournaments/skyesports-masters-championship-24#tab-stages');
+        await page.goto('/es/tournaments/galaxy-battle-1#tab-stages');
         await clickModals(page);
     });
 
@@ -456,7 +456,7 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tCSc-29 User Pickem in Tournament', async ({ page }) => {
-        await page.goto('/es/tournaments/blast-premier-fall-groups-2024/pickems?user_id=4992');
+        await page.goto('/es/tournaments/iem-dallas-2024/pickems?user_id=4992');
         await clickModals(page);
     });
 
