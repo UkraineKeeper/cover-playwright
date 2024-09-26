@@ -27,7 +27,7 @@ export default defineConfig({
   use: {
     actionTimeout: 30 * 1000,
     navigationTimeout: 60 * 1000,
-    baseURL: 'http://bo3.gg',
+    baseURL: 'http://prod.hotsbet.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
