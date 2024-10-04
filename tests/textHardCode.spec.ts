@@ -16,22 +16,22 @@ export async function clickModals(page) {
 test.describe('Check texts for CS Pages', () => {
 
     test('HardCode-tCSi-01 CS Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/favbet-vs-drillas-26-09-2024');
+        await page.goto('/es/matches/b8-vs-alternate-attax-cs-go-03-10-2024');
         await clickModals(page);
     });
 
     test('HardCode-tCSi-02 CS Live Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/partizan-esport-vs-genone-26-09-2024');
+        await page.goto('/es/matches/favbet-vs-spotless-03-10-2024');
         await clickModals(page);
     });
 
     test('HardCode-tCSi-03 CS Upcoming Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/m80-cs-go-vs-take-flyte-29-09-2024');
+        await page.goto('/es/matches/faze-vs-furia-07-10-2024');
         await clickModals(page);
     });
 
     test('HardCode-tCSi-04 CS Upcoming Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/matches/natus-vincere-junior-vs-l-g-27-09-2024');
+        await page.goto('/es/matches/navi-javelins-vs-astralis-female-18-10-2024');
         await clickModals(page);
     });
 
@@ -140,8 +140,8 @@ test.describe('Check texts for CS Pages', () => {
         await clickModals(page);
     });
 
-    test.skip('HardCode-tVLRi-01 VLR Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/');
+    test('HardCode-tVLRi-01 VLR Live Match First', async ({ page }) => { // <--- Always Changed
+        await page.goto('/es/valorant/matches/boba-vs-fennel-female-03-10-2024');
         await clickModals(page);
     });
 
@@ -151,12 +151,12 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tVLRi-03 VLR Upcoming Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/valorant/matches/mir-gaming-gc-vs-purr-fectionists-02-10-2024');
+        await page.goto('/es/valorant/matches/loud-female-vs-tbs-e-sports-fem-11-10-2024');
         await clickModals(page);
     });
 
     test('HardCode-tVLRi-04 VLR Upcoming Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/valorant/matches/zeta-division-gc-vs-boba-01-10-2024');
+        await page.goto('/es/valorant/matches/mibr-female-vs-team-liquid-brazil-11-10-2024');
         await clickModals(page);
     });
 
@@ -231,12 +231,12 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tDOTAi-01 Dota Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/dota2/matches/l1ga-team-vs-night-pulse-26-09-2024');
+        await page.goto('/es/dota2/matches/into-the-storm-vs-passion-ua-dota2-30-09-2024');
         await clickModals(page);
     });
 
     test('HardCode-tDOTAi-02 Dota Live Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/dota2/matches/hydra-vs-five-beavers-26-09-2024');
+        await page.goto('/es/dota2/matches/virtuspro-vs-team-spirit-30-09-2024');
         await clickModals(page);
     });
 
@@ -276,7 +276,7 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tLOLi-01 LoL Live Match First', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/lol/gam-esports-vs-fukuoka-softbank-hawks-gaming-26-09-2024');
+        await page.goto('/es/lol/matches/bilibili-gaming-lol-vs-mad-lions-koi-lol-03-10-2024');
         await clickModals(page);
     });
 
@@ -286,7 +286,7 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tLOLi-03 LoL Upcoming Match Second', async ({ page }) => { // <--- Always Changed
-        await page.goto('/es/lol/matches/karmine-corp-blue-vs-vitalitybee-30-09-2024');
+        await page.goto('/es/lol/matches/g2-esports-lol-vs-pain-gaming-lol-03-10-2024');
         await clickModals(page);
     });
 
@@ -312,6 +312,11 @@ test.describe('Check texts for CS Pages', () => {
 
     test.skip('HardCode-tLOLi-08 LoL No Data Finished Match', async ({ page }) => {
         await page.goto('/es/');
+        await clickModals(page);
+    });
+
+    test('HardCode-tLOLi-09 LoL Map', async ({ page }) => {
+        await page.goto('/es/lol/matches/karmine-corp-blue-vs-vitalitybee-30-09-2024/map-1');
         await clickModals(page);
     });
 
@@ -401,12 +406,12 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tCSc-18 CS Inside News', async ({ page }) => {
-        await page.goto('/es/news/cadian-on-the-move-to-astralis-im-just-so-damn-hungry-to-win');
+        await page.goto('/es/news/dlsm-partners-blast-world-final-2024-singapore');
         await clickModals(page);
     });
 
     test('HardCode-tCSc-19 CS Inside Article', async ({ page }) => {
-        await page.goto('/es/articles/s-t-a-l-k-e-r-2-heart-of-chornobyl-release-date');
+        await page.goto('/es/articles/best-cs2-charms');
         await clickModals(page);
     });
 
@@ -606,12 +611,12 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tVLRc-13 Vlr Inside News', async ({ page }) => {
-        await page.goto('/es/valorant/news/fnatic-the-first-team-from-emea-to-secure-a-slot-at-valorant-champions-2024');
+        await page.goto('/es/valorant/news/the-valorant-console-community-is-interested-in-champions-collections-and-their-potential-future-appearance');
         await clickModals(page);
     });
 
     test('HardCode-tVLRc-14 Vlr Inside Article', async ({ page }) => {
-        await page.goto('/es/valorant/articles/why-does-everyone-hate-breeze');
+        await page.goto('/es/valorant/articles/ten-reasons-why-you-should-play-valorant');
         await clickModals(page);
     });
 
@@ -726,12 +731,12 @@ test.describe('Check texts for CS Pages', () => {
     });
     
     test('HardCode-tDOTAc-13 Dota Inside News', async ({ page }) => {
-        await page.goto('/es/dota2/news/player-k1-leaves-the-team-heroic');
+        await page.goto('/es/dota2/news/pgl-wallachia-season-2-kicks-off');
         await clickModals(page);
     });
 
     test('HardCode-tDOTAc-14 Dota Inside Article', async ({ page }) => {
-        await page.goto('/es/dota2/articles/master-windranger-in-dota-2-complete-tips-and-gameplay-guide');
+        await page.goto('/es/dota2/articles/13-facts-about-team-liquid-ti13-champion');
         await clickModals(page);
     });
 
@@ -741,7 +746,7 @@ test.describe('Check texts for CS Pages', () => {
     });
 
     test('HardCode-tLOLc-14 LoL Inside Article', async ({ page }) => {
-        await page.goto('/es/lol/articles/items-in-league-of-legends-complete-guide');
+        await page.goto('/es/lol/articles/kaisa-the-daughter-of-the-void-season-14-guide');
         await clickModals(page);
     });
 
