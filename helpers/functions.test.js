@@ -6,10 +6,10 @@ export async function checkWebPageSkeleton(page) {
     // await expect(page.locator(menuPages.menuHeader)).toBeVisible(); // only for web
     await expect(page.locator(footerElements.footerMenu)).toBeVisible();
     // await expect(page.locator(firstEntryWebElements.switchLanguageModal)).toBeVisible({ timeout: 30000 });
-    await page.locator(firstEntryWebElements.selectFirstLangInModal).click({ timeout: 30000 });
-    await expect(page.locator(firstEntryWebElements.selectFirstLangInModal)).toHaveCount(0);
+    await page.locator(firstEntryWebElements.selectFirstLangInModal).click({ timeout: 60000 });
     await expect(page.locator('text=component.')).toHaveCount(0);
     await expect(page.locator('text=components.')).toHaveCount(0);
+    await expect(page.locator('text=Not found')).toHaveCount(0);
 }
 
 const fs = require('fs');

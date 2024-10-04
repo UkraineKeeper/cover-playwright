@@ -57,7 +57,7 @@ export const firstEntryWebElements = {
     cookiesOpenSettingsButton: 'button.c-button.c-button--secondary[type="button"]',
     cookiesConfirmButton: 'button[class="c-button c-button--secondary"] ~ button',
     switchLanguageModal: 'div.vfm__content.vfm--outline-none.vfm--prevent-auto',
-    selectFirstLangInModal: 'div.o-modal__footer > .c-button.c-button--secondary',
+    selectFirstLangInModal: 'div:not(.o-modal__container) > div.o-modal__footer > .c-button.c-button--secondary',
     selectSecondLangInModal: '',
 }
 
