@@ -52,12 +52,12 @@ export const firstEntryWebElements = {
     acceptPersonalDataAgreementModal: "//p[@class='fc-button-label' and text()='Погоджуюся']",
     spoilerModeModalTitle: 'div[class="vfm__content vfm--outline-none"] > header > h3',
     spoilerModeModal: '',
-    spoilerModeConfirmationButton: 'button.c-button.c-button--full-width', //'div[class="o-modal__footer o-layout__item"] > button[class="c-button c-button--full-width"]',//'.o-modal__body > .o-modal__footer > .c-button',
+    spoilerModeConfirmationButton: 'div.o-modal__footer > button.c-button.c-button--full-width',
     cookieNotificationWebElements: 'o-modal__container',
     cookiesOpenSettingsButton: 'button.c-button.c-button--secondary[type="button"]',
-    cookiesConfirmButton: 'button[class="c-button c-button--secondary"] ~ button',
+    cookiesConfirmButton: '//div[contains(@class, "c-modal-cookies")]//button[@class="c-button"]',
     switchLanguageModal: 'div.vfm__content.vfm--outline-none.vfm--prevent-auto',
-    selectFirstLangInModal: 'div:not(.o-modal__container) > div.o-modal__footer > .c-button.c-button--secondary',
+    selectFirstLangInModal: '//div[contains(@class, "c-modal-lanquage-confirmation")]//div[@class="o-modal__footer"]//button[contains(@class, "c-button c-button--secondary")]',
     selectSecondLangInModal: '',
 }
 
